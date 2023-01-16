@@ -5,27 +5,26 @@ body {
     margin-right: 150px;
     margin-left: 150px;
 }
+main {
+    display: flex;
+    flex-direction: row;
+}
 section {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
-article{
+sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    flex: 200px
+}
+article {
     flex: 1;
-}
-article:nth-of-type(2) {
-    flex: 3;
-  }
-
-.flexContainer {
-    display: flex;
-    background-color: bisque;
-}
-
-.flexGrowContainer {
-    display: flex;
-    align-items: stretch;
-    background-color: blueviolet;
 }
 
 
