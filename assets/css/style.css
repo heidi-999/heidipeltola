@@ -5,6 +5,29 @@ body {
     margin-right: 150px;
     margin-left: 150px;
 }
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    flex: 1;
+}
+article:nth-of-type(2) {
+    flex: 3;
+  }
+
+.flexContainer {
+    display: flex;
+    background-color: bisque;
+}
+
+.flexGrowContainer {
+    display: flex;
+    align-items: stretch;
+    background-color: blueviolet;
+}
+
 
 h1 {
     text-align: center;
@@ -16,10 +39,6 @@ h1 {
     color:rgb(255, 0, 0);
     border-bottom-style: solid;
     text-transform: uppercase;
-}
-
-p {
-
 }
 
 img {

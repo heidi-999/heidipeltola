@@ -1,80 +1,131 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Korkeakoulujen ensimmäinen yhteishaku alkaa 4.1.2023</title>
-    <meta name="author" content="Heidi Peltola"/>
-    <meta name="description"
-        content="HAMK Korkeakoulujen ensimmäinen yhteishaku alkaa 4.1.2023"/>
+    <title>Let's Learn Flex Box</title>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <style>
+        
+        body {
+        margin: 0;
+      }
+
+      header, footer {
+        background: purple;
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+
+      }
+      </style>
 </head>
 <body>
-    <main>
-    <p>Link to the website selected for this task: <a href="https://www.hamk.fi/2022/korkeakoulujen-kevaan-ensimmainen-yhteishaku-alkaa-4-1-2023/" target="_blank">link</a></p>
-    <img src="assets/images/hamk.png" alt="hamk logo" width="20%">
+    <header>
+        <h1>Flex Box Examples </h1>
+      </header>
 
-    <ul>
-        <li>HAKIJALLE</li>
-        <li>OPISKELIJALLE</li>
-        <li>YRITYKSILLE</li>
-        <li>TUTKIMUS</li>
-        <li>HAMK</li>
-        <li>YHTEYSTIEDOT</li>
-    </ul>
+      <section>
+          
+        <article>
+          <h2>What is HTML?</h2>
+          <p>
+            Hypertext Markup Language (HTML) is the standard markup language for 
+            documents that are designed to be displayed in a web browser. HTML is not a programming language. 
+            It is a markup language that tells browser how to structure a web page. HTML is made up of sereis of elements such as a piece of text, a pragraph, 
+             list, table, links or forms.
+          </p>
+        </article>
+  
+        <article>
+          <h2>HTML Elements</h2>
+  
+          <p>
+            As in the above example, html document consists of a tree of elements and text. 
+            Each element starts with a tag and ends with a tag.
+             Tags have to be nested such that they are completely within each other without overlapping .
+          </p>
+        </article>
 
-    <h1>Korkeakoulujen kevään ensimmäinen yhteishaku alkaa 4.1.2023</h1>
-    <h2>Kevään ensimmäisessä yhteishaussa tammikuussa voi hakea syksyllä alkaviin HAMKin vieraskielisiin koulutuksiin.</h2>
-    <h2>Samaan aikaan on käynnissä myös haku ammatillisiin opettajankoulutuksiin.</h2>
-    <img src="assets/images/people.jpg" alt="some people">
+        
+        <article>
+          <h2>Block Level Elements</h2>
+  
+          <p>
+            Block-level elements form a visible block on a page. A block-level element appears on a new line 
+            following the content that precedes it. Any content that follows a block-level element also 
+            appears on a new line. Block-level elements are usually structural elements on the page.
+             For example, a block-level element might represent headings, paragraphs, lists, navigation 
+             menus, or footers. A block-level element wouldn't 
+            be nested inside an inline element, but it might be nested inside another block-level element.
+          </p>
+        </article>
+      </section> 
+      <div class="flexContainer">      
+        <article>
+            <h2>HTML Elements</h2>
+    
+            <p>
+              As in the above example, html document consists of a tree of elements and text. 
+              Each element starts with a tag and ends with a tag.
+               Tags have to be nested such that they are completely within each other without overlapping .
+            </p>
+          </article>
+  
+          
+          <article>
+            <h2>Block Level Elements</h2>
+    
+            <p>
+              Block-level elements form a visible block on a page. A block-level element appears on a new line 
+              following the content that precedes it. Any content that follows a block-level element also 
+              appears on a new line. Block-level elements are usually structural elements on the page.
+               For example, a block-level element might represent headings, paragraphs, lists, navigation 
+               menus, or footers. A block-level element wouldn't 
+              be nested inside an inline element, but it might be nested inside another block-level element.
+            </p>
+          </article>
+      </div>
+      <div class="flexGrowContainer">
+        <article style="flex-grow:1;">
+            <h2>HTML Elements</h2>
+    
+            <p>
+              As in the above example, html document consists of a tree of elements and text. 
+              Each element starts with a tag and ends with a tag.
+               Tags have to be nested such that they are completely within each other without overlapping .
+            </p>
+          </article>
+  
+          
+          <article style="flex-grow:4;">
+            <h2>Block Level Elements</h2>
+    
+            <p>
+              Block-level elements form a visible block on a page. A block-level element appears on a new line 
+              following the content that precedes it. Any content that follows a block-level element also 
+              appears on a new line. Block-level elements are usually structural elements on the page.
+               For example, a block-level element might represent headings, paragraphs, lists, navigation 
+               menus, or footers. A block-level element wouldn't 
+              be nested inside an inline element, but it might be nested inside another block-level element.
+            </p>
+          </article>
 
-    <p>Kevään ensimmäinen yhteishaku alkaa 4.1.2023 ja päättyy 18.1.2023 klo 15.00. Yhteishaun hakulomake löytyy <b><a href="https://opintopolku.fi/konfo/fi/sivu/korkeakoulujen-yhteishaku#hakulomake" target="_blank">Opintopolku.fi -palvelusta.</a></b></p>
-    <p>HAMKin englanninkielisistä koulutuksista on mukana yhdeksän AMK-tutkintoon johtavaa koulutusta sekä kaksi YAMK-tutkintoon johtavaa koulutusta.</p>
-
-    <h3>AMK-tutkintoon johtavat koulutukset:</h3>
-    <p>Computer Applications / päivätoteutus / Hämeenlinna</p>
-    <p>Construction Engineering / päivätoteutus / Hämeenlinna</p>
-    <p>Electrical and Automation Engineering / päivätoteutus / Valkeakoski</p>
-    <p>Information and Communication Technology, Bioeconomy / päivätoteutus / Forssa</p>
-    <p>International Business / päivätoteutus / monimuoto / Valkeakoski</p>
-    <p>Mechanical Engineering and Production Technology / päivätoteutus / Riihimäki</p>
-    <p>Smart Organic Farming / päivätoteutus / Mustiala</p>
-    <p>Smart and Sustainable Design / päivätoteutus / Hämeenlinna</p>
-    <p>Sustainable Forest Management / päivätoteutus / Evo</p>
-
-    <h3>YAMK-tutkintoon johtavat koulutukset:</h3>
-    <p>Management in Sustainable Business / monimuoto / verkko-opinnot</p>
-    <p>Sustainable Technologies / monimuoto / päivätoteutus / Hämeenlinna, Riihimäki, Valkeakoski</p>
-
-    <h3><a href="https://www.hamk.fi/hae-hamkiin/#tammikuun-yhteishaku" target="_blank">Kuvaukset koulutuksista löytyy täältä.</a></h3>
-    <p>HAMKin englanninkielisissä AMK-koulutuksissa valintatapana käytetään verkossa suoritettavaa valtakunnallista International UAS Exam –valintakoetta. Smart and Sustainable Design -koulutuksessa käytetään HAMKin omaa verkossa suoritettavaa valintakoetta.</p>
-    <p>International UAS Exam koostuu kahdesta vaiheesta, jotka järjestetään kokonaan verkossa. Ensimmäisen vaiheen kirjallinen koe toteutetaan ke 8.2.2023. Toisen vaiheen ryhmähaastattelut järjestetään 6.–17.3.2023. Lisätietoa International UAS Examista löytyy UASinfo.fi sivustolta.</p>
-    <p>HAMKin oma valintakoe Smart and Sustainable Design -koulutukselle järjestetään verkossa 27.-29.3.2023. Valintakoe koostuu kahdesta osasta: motivaatiokirjeen ja suunnittelutehtävät hyväksytysti suorittaneet kutsutaan verkossa järjestettävään englannin kielikokeeseen.</p>
-    <p>Englanninkielisten ylempien AMK-koulutuksien valintatapa on myös kaksivaiheinen: ennakkotehtävä sekä haastattelu. Management in Sustainable Business -koulutuksessa laaditaan tutkimussuunnitelma ja hakijoilla on ryhmähaastattelu verkossa. Sustainable Technologies -koulutuksessa tutkimussuunnitelman lisäksi laaditaan motivaatiokirje ja hakijoilla on ryhmähaastattelu verkossa.</p>
-    <p>Valintojen tulokset ilmoitetaan hakijoille viimeistään 2.6.2023.</p>
-    <p>Kevään ensimmäisen yhteishaun yleiset periaatteet</p>
-    <p>Kevään ensimmäisessä yhteishaussa ovat mukana syksyllä alkavat ammattikorkeakoulujen ja yliopistojen vieraskieliset koulutukset ja taideyliopiston sekä Tampereen yliopiston näyttelijäntyön koulutukset.</p>
-
-    <ul>
-        <li><b>yhdellä hakulomakkeella voi hakea korkeintaan kuuteen eri koulutukseen</b></li>
-        <li><i>koulutuksia ei tarvitse asettaa mieluisuusjärjestykseen</i></li>
-        <li><b>voi tulla hyväksytyksi niin moneen koulutukseen kuin mihin valintamenestys riittää</b></li>
-        <li><i>mukana olevat koulutukset kuuluvat yhden korkeakoulupaikan säännöksen piiriin</i></li>
-    </ul>
-
-    <p>Yhden korkeakoulupaikan säännöksen mukaan vastaan voi ottaa samana lukukautena alkavasta koulutuksesta vain yhden korkeakoulututkintoon johtavan opiskelupaikan. Säännös koskee sekä yhteishauissa, erillishauissa että yliopistojen jatkotutkintohauissa saatuja opiskelupaikkoja. Esimerkiksi jos ottaa opiskelupaikan vastaan ensimmäisestä yhteishausta, ei voi ottaa opiskelupaikkaa vastaan kevään toisesta yhteishausta tai toisin päin.</p>
-
-    <p>Käynnissä on myös <b><a href="https://www.hamk.fi/aokk/" target="_blank">haku ammatillisiin opettajankoulutuksiin.</a></b></p>
-    <p><b><a href="https://www.hamk.fi/hae-hamkiin/#tammikuun-yhteishaku" target="_blank">Lisätietoja verkkosivuillamme.</a></b></p>
-
-    <p><img src="assets/images/hamk.png" alt="hamk logo" width="10%" style="float:left; margin-right: 10px;">Lorem ipsum dolor sit, amet 
-        consectetur adipisicing elit. Error vel, praesentium asperiores repudiandae ipsa vitae eaque pariatur quam nam ab mollitia, 
-        sint velit et consequuntur harum blanditiis distinctio corporis laborum impedit nostrum tempore molestias! Architecto eius 
-        soluta facere mollitia ducimus dolorum officiis non adipisci recusandae, placeat blanditiis dolores nostrum similique odio 
-        vero quasi vel, quae perferendis maiores asperiores commodi ea. Eveniet recusandae et ipsa tempore rem corrupti quos itaque 
-        amet enim qui repudiandae, inventore mollitia odit libero soluta quam, sit magnam accusantium natus! Distinctio dolores velit 
-        possimus temporibus, repellendus quis repellat! A possimus adipisci qui placeat quas minus incidunt maiores.</p>
-    </main>
+      </div>
+      <footer>
+        <h1>Learning Flex @ 2022</h1>
+    </footer>
 </body>
 </html>
