@@ -12,6 +12,6 @@ jobs:
       - name: Comment on new issue #this is another step that comments on the issue 
         uses: peter-evans/create-or-update-comment@v1
         with:
-          pr-number: ${{ github.event.pull_request.number }} # The issue number is obtained from the context of the event that triggered the action.
+          issue-number: ${{ github.event.pull_request.number }} # The issue number is obtained from the context of the event that triggered the action.
           body: | # The body of the comment is a message thanking the user for opening the issue.
             Thanks for opening this issue! We'll take a look as soon as possible.
