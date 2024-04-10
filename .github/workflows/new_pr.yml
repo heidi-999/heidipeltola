@@ -14,4 +14,4 @@ jobs:
         with:
           issue-number: ${{ github.event.pull_request.number }} # The issue number is obtained from the context of the event that triggered the action.
           body: | # The body of the comment is a message thanking the user for opening the issue.
-            Thanks for opening this issue! We'll take a look as soon as possible.
+            Jahuuu uusi pull request!
