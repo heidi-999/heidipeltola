@@ -4,15 +4,14 @@ on:
     types:
       - opened
 jobs:
-  example_comment_pr:
-    runs-on: ubuntu-latest
-    name: An example job to comment a PR
+  comment_pr:
+    runs-on: ubuntu-latest # This job will run on the latest version of Ubuntu.
+    permissions: # This job requires write access to issues in order to add labels and comment.
+      pull-requests: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Comment PR
-        uses: thollander/actions-comment-pull-request@v2
+      - name: Comment on new issue #this is another step that comments on the issue 
+        uses: peter-evans/create-or-update-comment@v1
         with:
-          message: |
-            Hello world ! :wave:
+          pr-number: ${{ github.event.pull_request.number }} # The issue number is obtained from the context of the event that triggered the action.
+          body: | # The body of the comment is a message thanking the user for opening the issue.
+            Thanks for opening this issue! We'll take a look as soon as possible.
